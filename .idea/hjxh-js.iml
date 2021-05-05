@@ -5,6 +5,9 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/sdk/old" />
+      <excludeFolder url="file://$MODULE_DIR$/reference" />
+      <excludeFolder url="file://$MODULE_DIR$/hack" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

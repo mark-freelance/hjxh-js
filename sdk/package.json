@@ -1,0 +1,16 @@
+{
+  "name": "finance-steward-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/mongoose": "^5.10.5",
+    "@types/node": "^15.0.1",
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "mongoose": "^5.12.7",
+    "typescript": "^4.2.4",
+    "utility-types": "^3.10.0"
+  }
+}

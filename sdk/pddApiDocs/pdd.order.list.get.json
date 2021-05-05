@@ -1,0 +1,1951 @@
+{
+  "success": true,
+  "errorCode": 1000000,
+  "errorMsg": null,
+  "result": {
+    "id": 2781,
+    "catId": 1,
+    "apiName": "订单列表查询接口（根据成交时间）",
+    "scopeName": "pdd.order.list.get",
+    "usageScenarios": "根据成团时间查询订单列表（只能获取到成交时间三个月以内的交易信息）\n注：虚拟订单充值手机号信息无法通过此接口获取，请联系虚拟类目运营人员。",
+    "needOauth": 1,
+    "chargeType": 1,
+    "platform": 0,
+    "scenesId": null,
+    "scenesName": null,
+    "roleId": null,
+    "createdAt": 1618751288000,
+    "updatedAt": 1619017327000,
+    "roleName": null,
+    "requestCodeExample": null,
+    "responseCodeExample": "{\n  \"order_list_get_response\": {\n    \"has_next\": false,\n    \"order_list\": [\n      {\n        \"address\": \"1\",\n        \"after_sales_status\": 1,\n        \"bonded_warehouse\": \"str\",\n        \"buyer_memo\": \"1\",\n        \"capital_free_discount\": 1.0,\n        \"card_info_list\": [\n          {\n            \"card_no\": \"1\",\n            \"mask_password\": \"1\"\n          }\n        ],\n        \"cat_id_1\": 1,\n        \"cat_id_2\": 1,\n        \"cat_id_3\": 1,\n        \"cat_id_4\": 1,\n        \"city\": \"1\",\n        \"city_id\": 1,\n        \"confirm_status\": 1,\n        \"confirm_time\": \"1\",\n        \"country\": \"1\",\n        \"country_id\": 1,\n        \"created_time\": \"1\",\n        \"delivery_home_value\": 1.0,\n        \"delivery_install_value\": 1.0,\n        \"delivery_one_day\": 0,\n        \"discount_amount\": 1.0,\n        \"duoduo_wholesale\": 1,\n        \"free_sf\": 1,\n        \"gift_list\": [\n          {\n            \"goods_count\": 0,\n            \"goods_id\": 0,\n            \"goods_img\": \"str\",\n            \"goods_name\": \"str\",\n            \"goods_price\": 0.0,\n            \"goods_spec\": \"str\",\n            \"outer_goods_id\": \"str\",\n            \"outer_id\": \"str\",\n            \"sku_id\": 0\n          }\n        ],\n        \"goods_amount\": 1.0,\n        \"group_status\": 1,\n        \"home_delivery_type\": 1,\n        \"home_install_value\": 1.0,\n        \"inner_transaction_id\": \"1\",\n        \"invoice_status\": 1,\n        \"is_lucky_flag\": 1,\n        \"is_pre_sale\": 1,\n        \"is_stock_out\": 1,\n        \"item_list\": [\n          {\n            \"goods_count\": 1,\n            \"goods_id\": \"1\",\n            \"goods_img\": \"1\",\n            \"goods_name\": \"1\",\n            \"goods_price\": 1.0,\n            \"goods_spec\": \"1\",\n            \"outer_goods_id\": \"1\",\n            \"outer_id\": \"1\",\n            \"sku_id\": \"1\"\n          }\n        ],\n        \"last_ship_time\": \"1\",\n        \"logistics_id\": 1,\n        \"mkt_biz_type\": 1,\n        \"only_support_replace\": 1,\n        \"order_change_amount\": 0.0,\n        \"order_depot_info\": {\n          \"depot_code\": \"1\",\n          \"depot_id\": 1,\n          \"depot_name\": \"1\",\n          \"depot_type\": 1,\n          \"ware_id\": 1,\n          \"ware_name\": \"1\",\n          \"ware_sn\": \"1\",\n          \"ware_sub_info_list\": [\n            {\n              \"ware_id\": 1,\n              \"ware_name\": \"1\",\n              \"ware_quantity\": 1,\n              \"ware_sn\": \"1\"\n            }\n          ],\n          \"ware_type\": 1\n        },\n        \"order_sn\": \"1\",\n        \"order_status\": 1,\n        \"order_tag_list\": [\n          {\n            \"name\": \"return_freight_payer\",\n            \"value\": 1\n          }\n        ],\n        \"pay_amount\": 1.0,\n        \"pay_no\": \"1\",\n        \"pay_time\": \"1\",\n        \"pay_type\": \"1\",\n        \"platform_discount\": 1.0,\n        \"postage\": 1.0,\n        \"pre_sale_time\": \"1\",\n        \"province\": \"1\",\n        \"province_id\": 1,\n        \"receive_time\": \"1\",\n        \"receiver_address\": \"1\",\n        \"receiver_name\": \"1\",\n        \"receiver_phone\": \"1\",\n        \"refund_status\": 1,\n        \"remark\": \"1\",\n        \"remark_tag\": 1,\n        \"remark_tag_name\": \"红色\",\n        \"return_freight_payer\": 1,\n        \"risk_control_status\": 0,\n        \"self_contained\": 0,\n        \"seller_discount\": 1.0,\n        \"shipping_time\": \"1\",\n        \"shipping_type\": 0,\n        \"step_order_info\": {\n          \"advanced_paid_fee\": 1.0,\n          \"step_discount_amount\": 1.0,\n          \"step_paid_fee\": 1.0,\n          \"step_trade_status\": 1\n        },\n        \"stock_out_handle_status\": 1,\n        \"support_nationwide_warranty\": 1,\n        \"town\": \"1\",\n        \"town_id\": 1,\n        \"tracking_number\": \"1\",\n        \"trade_type\": 1,\n        \"updated_at\": \"1\",\n        \"urge_shipping_time\": \"str\",\n        \"yyps_date\": \"str\",\n        \"yyps_time\": \"str\"\n      }\n    ],\n    \"total_count\": 1\n  }\n}",
+    "feeType": "Free",
+    "apiAccessSourceLimitType": 0,
+    "isTargetClientIdNeeded": false,
+    "requestParamList": [
+      {
+        "id": 1,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "order_status",
+        "paramType": "INTEGER",
+        "isMust": 1,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "发货状态，1：待发货，2：已发货待签收，3：已签收 5：全部"
+      },
+      {
+        "id": 2,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "refund_status",
+        "paramType": "INTEGER",
+        "isMust": 1,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "售后状态 1：无售后或售后关闭，2：售后处理中，3：退款中，4： 退款成功 5：全部"
+      },
+      {
+        "id": 3,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "start_confirm_at",
+        "paramType": "LONG",
+        "isMust": 1,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "必填，成交时间开始时间的时间戳，指格林威治时间 1970 年 01 月 01 日 00 时 00 分 00 秒(北京时间 1970 年 01 月 01 日 08 时 00 分 00 秒)起至现在的总秒数"
+      },
+      {
+        "id": 4,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "end_confirm_at",
+        "paramType": "LONG",
+        "isMust": 1,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "必填，成交时间结束时间的时间戳，指格林威治时间 1970 年 01 月 01 日 00 时 00 分 00 秒(北京时间 1970 年 01 月 01 日 08 时 00 分 00 秒)起至现在的总秒数 PS：开始时间结束时间间距不超过 24 小时"
+      },
+      {
+        "id": 5,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "page",
+        "paramType": "INTEGER",
+        "isMust": 1,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "返回页码 默认 1，页码从 1 开始 PS：当前采用分页返回，数量和页数会一起传，如果不传，则采用 默认值"
+      },
+      {
+        "id": 6,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "page_size",
+        "paramType": "INTEGER",
+        "isMust": 1,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "返回数量，默认 100。最大 100"
+      },
+      {
+        "id": 7,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "trade_type",
+        "paramType": "INTEGER",
+        "isMust": 0,
+        "defaultValue": "",
+        "example": "1",
+        "paramDesc": "订单类型 0-普通订单 ，1- 定金订单"
+      },
+      {
+        "id": 8,
+        "parentId": 0,
+        "childrenNum": 0,
+        "paramName": "use_has_next",
+        "paramType": "BOOLEAN",
+        "isMust": 0,
+        "defaultValue": "",
+        "example": "",
+        "paramDesc": "是否启用has_next的分页方式，如果指定true,则返回的结果中不包含总记录数，但是会新增一个是否存在下一页的的字段，通过此种方式获取增量交易，效率在原有的基础上有80%的提升。"
+      }
+    ],
+    "responseParamList": [
+      {
+        "id": 1,
+        "parentId": 0,
+        "childrenNum": 3,
+        "paramName": "order_list_get_response",
+        "paramType": "OBJECT",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "请求response"
+      },
+      {
+        "id": 2,
+        "parentId": 1,
+        "childrenNum": 77,
+        "paramName": "order_list",
+        "paramType": "OBJECT[]",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单信息列表"
+      },
+      {
+        "id": 3,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "delivery_install_value",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "送货入户并安装费用 单位：元"
+      },
+      {
+        "id": 4,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "delivery_home_value",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "送货入户费用 单位：元"
+      },
+      {
+        "id": 5,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "home_install_value",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "上门安装费用 单位：元"
+      },
+      {
+        "id": 6,
+        "parentId": 2,
+        "childrenNum": 2,
+        "paramName": "card_info_list",
+        "paramType": "OBJECT[]",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "卡号信息列表"
+      },
+      {
+        "id": 7,
+        "parentId": 6,
+        "childrenNum": 0,
+        "paramName": "card_no",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "卡号"
+      },
+      {
+        "id": 8,
+        "parentId": 6,
+        "childrenNum": 0,
+        "paramName": "mask_password",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "卡密"
+      },
+      {
+        "id": 9,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "free_sf",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "是否顺丰包邮，1-是 0-否"
+      },
+      {
+        "id": 10,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "confirm_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "成交状态：0：未成交、1：已成交、2：已取消"
+      },
+      {
+        "id": 11,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "group_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "成团状态：0：拼团中、1：已成团、2：团失败"
+      },
+      {
+        "id": 12,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "return_freight_payer",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "退货包运费，1:是，0:否"
+      },
+      {
+        "id": 13,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "home_delivery_type",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "送货入户并安装服务 0-不支持送货，1-送货入户不安装，2-送货入户并安装"
+      },
+      {
+        "id": 14,
+        "parentId": 2,
+        "childrenNum": 4,
+        "paramName": "step_order_info",
+        "paramType": "OBJECT",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "{ \"step_discount_amount\":4, \"advanced_paid_fee\":1, \"step_paid_fee\":1.1, \"step_trade_status\":2 }"
+      },
+      {
+        "id": 15,
+        "parentId": 14,
+        "childrenNum": 0,
+        "paramName": "step_trade_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "定金订单状态：step_trade_status 枚举：0-定金未付尾款未付、1-定金已付尾款未付、2-定金已付尾款已付"
+      },
+      {
+        "id": 16,
+        "parentId": 14,
+        "childrenNum": 0,
+        "paramName": "step_paid_fee",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "分阶段已付金额 单位：元"
+      },
+      {
+        "id": 17,
+        "parentId": 14,
+        "childrenNum": 0,
+        "paramName": "advanced_paid_fee",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "已付定金 单位：元"
+      },
+      {
+        "id": 18,
+        "parentId": 14,
+        "childrenNum": 0,
+        "paramName": "step_discount_amount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "膨胀金额 单位：元"
+      },
+      {
+        "id": 19,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "trade_type",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单类型 0-普通订单 ，1- 定金订单"
+      },
+      {
+        "id": 20,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "order_sn",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单编号"
+      },
+      {
+        "id": 21,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "capital_free_discount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "团长免单金额，单位：元"
+      },
+      {
+        "id": 22,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "seller_discount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商家优惠金额，单位：元"
+      },
+      {
+        "id": 23,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "platform_discount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "平台优惠金额，单位：元"
+      },
+      {
+        "id": 24,
+        "parentId": 2,
+        "childrenNum": 9,
+        "paramName": "item_list",
+        "paramType": "OBJECT[]",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单商品列表"
+      },
+      {
+        "id": 25,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "goods_price",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品单件 单价：元"
+      },
+      {
+        "id": 26,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "goods_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品名称"
+      },
+      {
+        "id": 27,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "outer_goods_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品维度外部编码，注意：编辑商品后必须等待商品审核通过后方可生效，订单中商品信息为交易快照的商品信息。"
+      },
+      {
+        "id": 28,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "outer_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "sku维度商家外部编码，注意：编辑商品后必须等待商品审核通过后方可生效，订单中商品信息为交易快照的商品信息。"
+      },
+      {
+        "id": 29,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "sku_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品sku编码"
+      },
+      {
+        "id": 30,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "goods_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品编码"
+      },
+      {
+        "id": 31,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "goods_count",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品数量"
+      },
+      {
+        "id": 32,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "goods_spec",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品规格"
+      },
+      {
+        "id": 33,
+        "parentId": 24,
+        "childrenNum": 0,
+        "paramName": "goods_img",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品图片"
+      },
+      {
+        "id": 34,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "remark",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单备注"
+      },
+      {
+        "id": 35,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "last_ship_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单承诺发货时间"
+      },
+      {
+        "id": 36,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "updated_at",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单的更新时间"
+      },
+      {
+        "id": 37,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "refund_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "售后状态"
+      },
+      {
+        "id": 38,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "is_lucky_flag",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "是否是抽奖订单，1-非抽奖订单，2-抽奖订单"
+      },
+      {
+        "id": 39,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "order_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单状态"
+      },
+      {
+        "id": 40,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "shipping_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "发货时间"
+      },
+      {
+        "id": 41,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "tracking_number",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "快递单号"
+      },
+      {
+        "id": 42,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "logistics_id",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "快递公司在拼多多的代码"
+      },
+      {
+        "id": 43,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "pay_type",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "支付方式，枚举值：QQ,WEIXIN,ALIPAY,LIANLIANPAY"
+      },
+      {
+        "id": 44,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "pay_no",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "支付单号"
+      },
+      {
+        "id": 45,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "postage",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "邮费，单位：元"
+      },
+      {
+        "id": 46,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "discount_amount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "折扣金额，单位：元，折扣金额=平台优惠+商家优惠+团长免单优惠金额"
+      },
+      {
+        "id": 47,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "goods_amount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品金额，单位：元，商品金额=商品销售价格*商品数量-改价金额（接口暂无该字段）"
+      },
+      {
+        "id": 48,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "pay_amount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "支付金额，单位：元，支付金额=商品金额-折扣金额+邮费"
+      },
+      {
+        "id": 49,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "receiver_phone",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "收件人电话。订单状态为待发货状态，且订单未被风控打标的情况下返回密文数据；其余情况返回空字符串。"
+      },
+      {
+        "id": 50,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "address",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "详细地址"
+      },
+      {
+        "id": 51,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "town",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "区，乡镇"
+      },
+      {
+        "id": 52,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "city",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "城市"
+      },
+      {
+        "id": 53,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "province",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "省份"
+      },
+      {
+        "id": 54,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "country",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "国家或地区"
+      },
+      {
+        "id": 55,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "created_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单创建时间"
+      },
+      {
+        "id": 56,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "receiver_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "收件人姓名。订单状态为待发货状态，且订单未被风控打标的情况下返回密文数据；其余情况返回空字符串。"
+      },
+      {
+        "id": 57,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "confirm_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "成交时间"
+      },
+      {
+        "id": 58,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "receive_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "确认收货时间"
+      },
+      {
+        "id": 59,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "town_id",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "区县编码"
+      },
+      {
+        "id": 60,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "city_id",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "城市编码"
+      },
+      {
+        "id": 61,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "province_id",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "省份编码"
+      },
+      {
+        "id": 62,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "country_id",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "国家或地区编码"
+      },
+      {
+        "id": 63,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "is_stock_out",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "是否缺货 0-无缺货处理 1： 有缺货处理"
+      },
+      {
+        "id": 64,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "stock_out_handle_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "缺货处理状态 -1:无缺货处理 0: 缺货待处理 1缺货已处理"
+      },
+      {
+        "id": 65,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "cat_id_4",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品四级分类"
+      },
+      {
+        "id": 66,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "cat_id_3",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品三级分类"
+      },
+      {
+        "id": 67,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "cat_id_2",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品二级分类"
+      },
+      {
+        "id": 68,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "cat_id_1",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "商品一级分类"
+      },
+      {
+        "id": 69,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "inner_transaction_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "支付申报订单号（多多国际清关请使用此字段，单号以XP开头）"
+      },
+      {
+        "id": 70,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "buyer_memo",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "买家留言信息"
+      },
+      {
+        "id": 71,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "invoice_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "发票申请,1代表有 0代表无"
+      },
+      {
+        "id": 72,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "pre_sale_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "预售时间"
+      },
+      {
+        "id": 73,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "is_pre_sale",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "是否为预售商品 1表示是 0表示否"
+      },
+      {
+        "id": 74,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "after_sales_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "售后状态 0：无售后 2：买家申请退款，待商家处理 3：退货退款，待商家处理 4：商家同意退款，退款中 5：平台同意退款，退款中 6：驳回退款，待买家处理 7：已同意退货退款,待用户发货 8：平台处理中 9：平台拒绝退款，退款关闭 10：退款成功 11：买家撤销 12：买家逾期未处理，退款失败 13：买家逾期，超过有效期 14：换货补寄待商家处理 15：换货补寄待用户处理 16：换货补寄成功 17：换货补寄失败 18：换货补寄待用户确认完成 21：待商家同意维修 22：待用户确认发货 24：维修关闭 25：维修成功 27：待用户确认收货 31：已同意拒收退款，待用户拒收 32：补寄待商家发货"
+      },
+      {
+        "id": 75,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "only_support_replace",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "只换不修，1:是，0:否"
+      },
+      {
+        "id": 76,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "support_nationwide_warranty",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "全国联保，1:是，0:否"
+      },
+      {
+        "id": 77,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "pay_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "支付时间"
+      },
+      {
+        "id": 78,
+        "parentId": 2,
+        "childrenNum": 9,
+        "paramName": "order_depot_info",
+        "paramType": "OBJECT",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "仓库信息"
+      },
+      {
+        "id": 79,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "depot_id",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "仓库id"
+      },
+      {
+        "id": 80,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "depot_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "仓库名称"
+      },
+      {
+        "id": 81,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "depot_code",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "仓库编码"
+      },
+      {
+        "id": 82,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "ware_id",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "货品id"
+      },
+      {
+        "id": 83,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "ware_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "货品名称"
+      },
+      {
+        "id": 84,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "ware_type",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "货品类型（0：普通货品:1：组合货品）"
+      },
+      {
+        "id": 85,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "ware_sn",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "货品编码"
+      },
+      {
+        "id": 86,
+        "parentId": 78,
+        "childrenNum": 4,
+        "paramName": "ware_sub_info_list",
+        "paramType": "OBJECT[]",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "子货品列表（组合货品才会有子货品信息）"
+      },
+      {
+        "id": 87,
+        "parentId": 86,
+        "childrenNum": 0,
+        "paramName": "ware_sn",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "子货品编码"
+      },
+      {
+        "id": 88,
+        "parentId": 86,
+        "childrenNum": 0,
+        "paramName": "ware_quantity",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "子货品数量"
+      },
+      {
+        "id": 89,
+        "parentId": 86,
+        "childrenNum": 0,
+        "paramName": "ware_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "子货品名称"
+      },
+      {
+        "id": 90,
+        "parentId": 86,
+        "childrenNum": 0,
+        "paramName": "ware_id",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "子货品id"
+      },
+      {
+        "id": 91,
+        "parentId": 78,
+        "childrenNum": 0,
+        "paramName": "depot_type",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "仓库类型，1：自有仓 2：订阅仓 两者都不是则传空"
+      },
+      {
+        "id": 92,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "receiver_address",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "收件人地址，不拼接省市区。订单状态为待发货状态，且订单未被风控打标的情况下返回密文数据；其余情况返回空字符串。"
+      },
+      {
+        "id": 93,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "self_contained",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "是否门店自提，1-是，0-否"
+      },
+      {
+        "id": 94,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "risk_control_status",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "订单审核状态（0-正常订单， 1-审核中订单）"
+      },
+      {
+        "id": 95,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "shipping_type",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "创建交易时的物流方式(1-预约配送)"
+      },
+      {
+        "id": 96,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "yyps_date",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "预约配送日期"
+      },
+      {
+        "id": 97,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "yyps_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "预约配送时段"
+      },
+      {
+        "id": 98,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "urge_shipping_time",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "催发货时间"
+      },
+      {
+        "id": 99,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "delivery_one_day",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "是否当日发货，1-是，0-否"
+      },
+      {
+        "id": 100,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "bonded_warehouse",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "保税仓名称"
+      },
+      {
+        "id": 101,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "order_change_amount",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "订单改价折扣金额，单位元"
+      },
+      {
+        "id": 102,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "remark_tag",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单备注标记，1-红色，2-黄色，3-绿色，4-蓝色，5-紫色"
+      },
+      {
+        "id": 103,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "remark_tag_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "红色",
+        "paramDesc": "订单备注标记名称"
+      },
+      {
+        "id": 104,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "duoduo_wholesale",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "是否多多批发，1-是，0-否"
+      },
+      {
+        "id": 105,
+        "parentId": 2,
+        "childrenNum": 0,
+        "paramName": "mkt_biz_type",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "市场业务类型，0-普通订单，1-拼内购订单"
+      },
+      {
+        "id": 106,
+        "parentId": 2,
+        "childrenNum": 2,
+        "paramName": "order_tag_list",
+        "paramType": "OBJECT[]",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "订单标签列表，no_trace_delivery=无痕发货，only_support_replace=只换不修，duoduo_wholesale=多多批发，return_freight_payer=退货包运费，free_sf=顺丰包邮，support_nationwide_warranty=全国联保，self_contained=门店自提，delivery_one_day=当日发货，oversea_tracing=全球购溯源"
+      },
+      {
+        "id": 107,
+        "parentId": 106,
+        "childrenNum": 0,
+        "paramName": "name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "return_freight_payer",
+        "paramDesc": "标签名称"
+      },
+      {
+        "id": 108,
+        "parentId": 106,
+        "childrenNum": 0,
+        "paramName": "value",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "是否有标签：0=无标签，1=有标签"
+      },
+      {
+        "id": 109,
+        "parentId": 2,
+        "childrenNum": 9,
+        "paramName": "gift_list",
+        "paramType": "OBJECT[]",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品列表"
+      },
+      {
+        "id": 110,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "goods_count",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品数量"
+      },
+      {
+        "id": 111,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "goods_id",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品id"
+      },
+      {
+        "id": 112,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "goods_img",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品图片"
+      },
+      {
+        "id": 113,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "goods_name",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品名称"
+      },
+      {
+        "id": 114,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "goods_price",
+        "paramType": "DOUBLE",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品销售价格"
+      },
+      {
+        "id": 115,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "goods_spec",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品规格"
+      },
+      {
+        "id": 116,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "outer_goods_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "商家外部商品编码"
+      },
+      {
+        "id": 117,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "outer_id",
+        "paramType": "STRING",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "商家外部sku编码"
+      },
+      {
+        "id": 118,
+        "parentId": 109,
+        "childrenNum": 0,
+        "paramName": "sku_id",
+        "paramType": "LONG",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "赠品规格编码"
+      },
+      {
+        "id": 119,
+        "parentId": 1,
+        "childrenNum": 0,
+        "paramName": "total_count",
+        "paramType": "INTEGER",
+        "sourcePath": null,
+        "example": "1",
+        "paramDesc": "订单总数"
+      },
+      {
+        "id": 120,
+        "parentId": 1,
+        "childrenNum": 0,
+        "paramName": "has_next",
+        "paramType": "BOOLEAN",
+        "sourcePath": null,
+        "example": "",
+        "paramDesc": "是否存在下一页"
+      }
+    ],
+    "errorParamList": [
+      {
+        "errorCode": "10000",
+        "errorMsg": "参数错误",
+        "solution": "参数值有误，按照文档要求填写请求参数",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "10001",
+        "errorMsg": "公共参数错误",
+        "solution": "请检查请求的公共参数",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "10016",
+        "errorMsg": "client下线或者clientId不正确",
+        "solution": "请核查您的client_id是否正确",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "10017",
+        "errorMsg": "type不正确",
+        "solution": "检查type是否正确",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "10018",
+        "errorMsg": "target_client_id下线或者target_client_id不正确",
+        "solution": "检查target_client_id 是否正确",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "10019",
+        "errorMsg": "access_token已过期",
+        "solution": "刷新access_token或者重新授权再次获取access_token",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "20004",
+        "errorMsg": "签名sign校验失败",
+        "solution": "请按照接入指南第三部分指导，生成签名",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "20005",
+        "errorMsg": "ip无权访问接口，请加入ip白名单",
+        "solution": "把ip白名单加入白名单",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "20031",
+        "errorMsg": "用户没有授权访问此接口",
+        "solution": "您创建的应用中不包含此接口，请查看API文档，了解相关权限包",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "20032",
+        "errorMsg": "access_token或client_id错误",
+        "solution": "检查access_token或client_id",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "20034",
+        "errorMsg": "接口处于下线状态",
+        "solution": "检查接口状态",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "20035",
+        "errorMsg": "接口不属于当前网关",
+        "solution": "判断调用网关url 是否正确",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "21001",
+        "errorMsg": "请求参数错误",
+        "solution": "业务参数输入错误",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "21002",
+        "errorMsg": "请求参数不能为空",
+        "solution": "检查业务参数必填是否已填",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "30000",
+        "errorMsg": "没有调用此target接口权限",
+        "solution": "检查是否获得调用此target接口权限",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "30001",
+        "errorMsg": "client_id和partner_id不匹配",
+        "solution": "检查partner_id是否正确",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "50000",
+        "errorMsg": "系统内部错误",
+        "solution": "系统内部错误，请加群联系相关负责人",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "50001",
+        "errorMsg": "业务服务错误",
+        "solution": "请根据子错误判断错误详情，无法解决请联系相关负责人",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "50002",
+        "errorMsg": "业务系统内部异常",
+        "solution": "请加群联系相关负责人",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "52001",
+        "errorMsg": "网关业务服务错误",
+        "solution": "联系技术支持解决",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "52002",
+        "errorMsg": "网关系统内部异常",
+        "solution": "联系技术支持解决",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "52004",
+        "errorMsg": "请求body 太大",
+        "solution": "检查请求体是否过大",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "52101",
+        "errorMsg": "当前接口被限流，请稍后重试",
+        "solution": "当前接口被限流，请稍后重试",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "52102",
+        "errorMsg": "当前接口暂时不可用，请稍后重试",
+        "solution": "当前接口被降级，请稍后重试",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "52103",
+        "errorMsg": "服务暂时不可用，请稍后重试",
+        "solution": "当前接口被降级，请稍后重试",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "70031",
+        "errorMsg": "调用过于频繁，请调整调用频率",
+        "solution": "调用过于频繁，请调整调用频率",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "70032",
+        "errorMsg": "当前请求被禁止调用",
+        "solution": "当前请求被禁止调用",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "70033",
+        "errorMsg": "当前接口因系统维护，暂时下线，请稍后再试！",
+        "solution": "当前接口因系统维护，暂时下线，请稍后再试！",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "70034",
+        "errorMsg": "当前用户或应用存在风险，禁止调用！",
+        "solution": "当前用户或应用存在风险，禁止调用！",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "70035",
+        "errorMsg": "当前用户或应用存在风险，禁止调用。请联系ddjb@pinduoduo.com",
+        "solution": "当前用户或应用存在风险，禁止调用。请联系ddjb@pinduoduo.com",
+        "outerErrorCode": ""
+      },
+      {
+        "errorCode": "70036",
+        "errorMsg": "应用处于测试状态，调用次数被限制",
+        "solution": "应用处于测试状态，调用次数达到上限被限制",
+        "outerErrorCode": ""
+      }
+    ],
+    "showErrorParamList": [
+      {
+        "mainErrorCode": "10000",
+        "mainErrorMsg": "参数错误",
+        "subErrorList": [
+          {
+            "errorCode": "10000",
+            "errorMsg": "参数错误",
+            "solution": "参数值有误，按照文档要求填写请求参数",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "10001",
+        "mainErrorMsg": "公共参数错误",
+        "subErrorList": [
+          {
+            "errorCode": "10001",
+            "errorMsg": "公共参数错误",
+            "solution": "请检查请求的公共参数",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "10016",
+        "mainErrorMsg": "client下线或者clientId不正确",
+        "subErrorList": [
+          {
+            "errorCode": "10016",
+            "errorMsg": "client下线或者clientId不正确",
+            "solution": "请核查您的client_id是否正确",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "10017",
+        "mainErrorMsg": "type不正确",
+        "subErrorList": [
+          {
+            "errorCode": "10017",
+            "errorMsg": "type不正确",
+            "solution": "检查type是否正确",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "10018",
+        "mainErrorMsg": "target_client_id下线或者target_client_id不正确",
+        "subErrorList": [
+          {
+            "errorCode": "10018",
+            "errorMsg": "target_client_id下线或者target_client_id不正确",
+            "solution": "检查target_client_id 是否正确",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "10019",
+        "mainErrorMsg": "access_token已过期",
+        "subErrorList": [
+          {
+            "errorCode": "10019",
+            "errorMsg": "access_token已过期",
+            "solution": "刷新access_token或者重新授权再次获取access_token",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "20004",
+        "mainErrorMsg": "签名sign校验失败",
+        "subErrorList": [
+          {
+            "errorCode": "20004",
+            "errorMsg": "签名sign校验失败",
+            "solution": "请按照接入指南第三部分指导，生成签名",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "20005",
+        "mainErrorMsg": "ip无权访问接口，请加入ip白名单",
+        "subErrorList": [
+          {
+            "errorCode": "20005",
+            "errorMsg": "ip无权访问接口，请加入ip白名单",
+            "solution": "把ip白名单加入白名单",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "20031",
+        "mainErrorMsg": "用户没有授权访问此接口",
+        "subErrorList": [
+          {
+            "errorCode": "20031",
+            "errorMsg": "用户没有授权访问此接口",
+            "solution": "您创建的应用中不包含此接口，请查看API文档，了解相关权限包",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "20032",
+        "mainErrorMsg": "access_token或client_id错误",
+        "subErrorList": [
+          {
+            "errorCode": "20032",
+            "errorMsg": "access_token或client_id错误",
+            "solution": "检查access_token或client_id",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "20034",
+        "mainErrorMsg": "接口处于下线状态",
+        "subErrorList": [
+          {
+            "errorCode": "20034",
+            "errorMsg": "接口处于下线状态",
+            "solution": "检查接口状态",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "20035",
+        "mainErrorMsg": "接口不属于当前网关",
+        "subErrorList": [
+          {
+            "errorCode": "20035",
+            "errorMsg": "接口不属于当前网关",
+            "solution": "判断调用网关url 是否正确",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "21001",
+        "mainErrorMsg": "请求参数错误",
+        "subErrorList": [
+          {
+            "errorCode": "21001",
+            "errorMsg": "请求参数错误",
+            "solution": "业务参数输入错误",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "21002",
+        "mainErrorMsg": "请求参数不能为空",
+        "subErrorList": [
+          {
+            "errorCode": "21002",
+            "errorMsg": "请求参数不能为空",
+            "solution": "检查业务参数必填是否已填",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "30000",
+        "mainErrorMsg": "没有调用此target接口权限",
+        "subErrorList": [
+          {
+            "errorCode": "30000",
+            "errorMsg": "没有调用此target接口权限",
+            "solution": "检查是否获得调用此target接口权限",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "30001",
+        "mainErrorMsg": "client_id和partner_id不匹配",
+        "subErrorList": [
+          {
+            "errorCode": "30001",
+            "errorMsg": "client_id和partner_id不匹配",
+            "solution": "检查partner_id是否正确",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "50000",
+        "mainErrorMsg": "系统内部错误",
+        "subErrorList": [
+          {
+            "errorCode": "50000",
+            "errorMsg": "系统内部错误",
+            "solution": "系统内部错误，请加群联系相关负责人",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "50002",
+        "mainErrorMsg": "业务系统内部异常",
+        "subErrorList": [
+          {
+            "errorCode": "50002",
+            "errorMsg": "业务系统内部异常",
+            "solution": "请加群联系相关负责人",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "52001",
+        "mainErrorMsg": "网关业务服务错误",
+        "subErrorList": [
+          {
+            "errorCode": "52001",
+            "errorMsg": "网关业务服务错误",
+            "solution": "联系技术支持解决",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "52002",
+        "mainErrorMsg": "网关系统内部异常",
+        "subErrorList": [
+          {
+            "errorCode": "52002",
+            "errorMsg": "网关系统内部异常",
+            "solution": "联系技术支持解决",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "52004",
+        "mainErrorMsg": "请求body 太大",
+        "subErrorList": [
+          {
+            "errorCode": "52004",
+            "errorMsg": "请求body 太大",
+            "solution": "检查请求体是否过大",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "52101",
+        "mainErrorMsg": "当前接口被限流，请稍后重试",
+        "subErrorList": [
+          {
+            "errorCode": "52101",
+            "errorMsg": "当前接口被限流，请稍后重试",
+            "solution": "当前接口被限流，请稍后重试",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "52102",
+        "mainErrorMsg": "当前接口暂时不可用，请稍后重试",
+        "subErrorList": [
+          {
+            "errorCode": "52102",
+            "errorMsg": "当前接口暂时不可用，请稍后重试",
+            "solution": "当前接口被降级，请稍后重试",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "52103",
+        "mainErrorMsg": "服务暂时不可用，请稍后重试",
+        "subErrorList": [
+          {
+            "errorCode": "52103",
+            "errorMsg": "服务暂时不可用，请稍后重试",
+            "solution": "当前接口被降级，请稍后重试",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "70031",
+        "mainErrorMsg": "调用过于频繁，请调整调用频率",
+        "subErrorList": [
+          {
+            "errorCode": "70031",
+            "errorMsg": "调用过于频繁，请调整调用频率",
+            "solution": "调用过于频繁，请调整调用频率",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "70032",
+        "mainErrorMsg": "当前请求被禁止调用",
+        "subErrorList": [
+          {
+            "errorCode": "70032",
+            "errorMsg": "当前请求被禁止调用",
+            "solution": "当前请求被禁止调用",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "70033",
+        "mainErrorMsg": "当前接口因系统维护，暂时下线，请稍后再试！",
+        "subErrorList": [
+          {
+            "errorCode": "70033",
+            "errorMsg": "当前接口因系统维护，暂时下线，请稍后再试！",
+            "solution": "当前接口因系统维护，暂时下线，请稍后再试！",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "70034",
+        "mainErrorMsg": "当前用户或应用存在风险，禁止调用！",
+        "subErrorList": [
+          {
+            "errorCode": "70034",
+            "errorMsg": "当前用户或应用存在风险，禁止调用！",
+            "solution": "当前用户或应用存在风险，禁止调用！",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "70035",
+        "mainErrorMsg": "当前用户或应用存在风险，禁止调用。请联系ddjb@pinduoduo.com",
+        "subErrorList": [
+          {
+            "errorCode": "70035",
+            "errorMsg": "当前用户或应用存在风险，禁止调用。请联系ddjb@pinduoduo.com",
+            "solution": "当前用户或应用存在风险，禁止调用。请联系ddjb@pinduoduo.com",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "70036",
+        "mainErrorMsg": "应用处于测试状态，调用次数被限制",
+        "subErrorList": [
+          {
+            "errorCode": "70036",
+            "errorMsg": "应用处于测试状态，调用次数被限制",
+            "solution": "应用处于测试状态，调用次数达到上限被限制",
+            "outerErrorCode": ""
+          }
+        ]
+      },
+      {
+        "mainErrorCode": "50001",
+        "mainErrorMsg": "业务服务错误",
+        "subErrorList": []
+      }
+    ],
+    "limiters": [
+      {
+        "limiterLevel": 1,
+        "timeRange": 60,
+        "times": 6000
+      },
+      {
+        "limiterLevel": 3,
+        "timeRange": 10,
+        "times": 10500
+      }
+    ],
+    "permissionsPkgs": [
+      {
+        "id": 36,
+        "name": "订单信息查询权限包",
+        "description": "查询订单",
+        "appTypeList": [
+          {
+            "id": 16,
+            "name": "打单",
+            "status": 1
+          },
+          {
+            "id": 17,
+            "name": "进销存",
+            "status": 1
+          },
+          {
+            "id": 20,
+            "name": "跨境企业ERP",
+            "status": 1
+          },
+          {
+            "id": 22,
+            "name": "虚拟商家后台系统",
+            "status": 1
+          },
+          {
+            "id": 24,
+            "name": "企业ERP",
+            "status": 1
+          },
+          {
+            "id": 25,
+            "name": "商家后台系统",
+            "status": 1
+          },
+          {
+            "id": 31,
+            "name": "国际商家自建仓系统",
+            "status": 1
+          },
+          {
+            "id": 39,
+            "name": "订单处理",
+            "status": 1
+          },
+          {
+            "id": 56,
+            "name": "电子凭证商家后台系统",
+            "status": 1
+          }
+        ]
+      }
+    ],
+    "sdkDemos": [
+      {
+        "name": "JAVA",
+        "description": "package com.pdd.pop.sdk.http.demo;\n\nimport com.pdd.pop.sdk.common.util.JsonUtil;\nimport com.pdd.pop.sdk.http.api.request.PddOrderListGetRequest;\nimport com.pdd.pop.sdk.http.api.response.PddOrderListGetResponse;\nimport com.pdd.pop.sdk.http.PopClient;\nimport com.pdd.pop.sdk.http.PopHttpClient;\n\npublic class PopClientDemo {\n\n    public static void main(String[] args) throws Exception {\n\n        String clientId = \"your clientId\";\n        String clientSecret = \"your clientSecret\";\n        String accessToken = \"your accessToken\";\n        PopClient client = new PopHttpClient(clientId, clientSecret);\n\n        PddOrderListGetRequest request = new PddOrderListGetRequest();\n        request.setOrderStatus(1);\n        request.setRefundStatus(1);\n        request.setStartConfirmAt(1L);\n        request.setEndConfirmAt(1L);\n        request.setPage(1);\n        request.setPageSize(1);\n        request.setTradeType(1);\n        request.setUseHasNext(false);\n        PddOrderListGetResponse response = client.syncInvoke(request, accessToken);\n        System.out.println(JsonUtil.transferToJson(response));\n    }\n}\n",
+        "url": ""
+      },
+      {
+        "name": "CURL",
+        "description": "curl -X POST 'http://host:port/api/router' \\\n-H 'Content-Type:application/x-www-form-urlencoded;charset=utf-8' \\\n-d refund_status=1 \\\n-d start_confirm_at=1 \\\n-d sign=your+sign \\\n-d type=pdd.order.list.get \\\n-d client_id=your+client+id \\\n-d access_token=your+access+token \\\n-d end_confirm_at=1 \\\n-d order_status=1 \\\n-d data_type=JSON \\\n-d trade_type=1 \\\n-d page=1 \\\n-d use_has_next=false \\\n-d page_size=1 \\\n-d timestamp=1527065024",
+        "url": ""
+      }
+    ]
+  }
+}
